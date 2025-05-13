@@ -12,14 +12,8 @@ a_arr.forEach((ele, idx) => {
 
 function isWin(a, b){
   if (a == b) return 'D';
-  if (a == 1){
-    if (b == 2) return 'B';
-  }
-  else if (a == 2){
-    if (b == 3) return 'B';
-  }
-  else if (a == 3){
-    if (b == 1) return 'B';
-  }
+  if (a == 1 & b == 2) return 'B';
+  else if (a == 2 & b == 3) return 'B';
+  else if (a == 3 & b == 1) return 'B';
   return 'A';
 }
